@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="spill.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCG66VNRKZMch24EF6nyjum4km6hrXbv4A",
+        authDomain: "spill-f01c6.firebaseapp.com",
+        databaseURL: "https://spill-f01c6.firebaseio.com",
+        projectId: "spill-f01c6",
+        storageBucket: "spill-f01c6.appspot.com",
+        messagingSenderId: "503939905664",
+        appId: "1:503939905664:web:d435d8155f21585d4a4e65"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <section class="loginscreen">
+        <section class="loginbox">
+          <h1>Log in/Sign   up</h1>
+          <section class="inputbox">
+            <input id="username" type="text" placeholder="Username">
+            <input id="password" type="text" placeholder="Password">
+          </section>
+          <section class="buttonbox">
+            <button id="loginbutton">Log in</button>
+            <button id="signupbutton">Sign up</button>
+          </section>
+        </section>
+      </section>
+      <section class="userinfo">
+        <h1 id="userinfodisplay">USERNAME</h1>
+      </section>
+      <section class="chat">
+        <section class="chatmeldinggrid">
+
+        </section>
+        <section class="chatinput">
+          <input id="meldingInput" onchange="sendData(event)" type="text" placeholder="Chat" maxlength="36">
+        </section>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="spill.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
+    <script type="text/Javascript" src="login.js"></script>
+  </body>
+</html>
